@@ -1,9 +1,11 @@
 import { type Context, Hono } from "hono";
 import { serve } from "@hono/node-server";
 import { serveStatic } from "@hono/node-server/serve-static";
+import "@microsoft/fast-ssr/install-dom-shim.js";
 import fastSSR from "@microsoft/fast-ssr";
 
 const { defaultRenderInfo, templateRenderer } = fastSSR();
+console.log("server.ts : defaultRenderInfo =", defaultRenderInfo);
 
 const html = String.raw;
 const app = new Hono();
