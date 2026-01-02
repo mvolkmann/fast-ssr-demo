@@ -2,7 +2,6 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "lib": ["ES2020", "DOM"],
-    "module": "ESNext",
     "moduleResolution": "node",
     "skipLibCheck": true,
     "strict": true,
