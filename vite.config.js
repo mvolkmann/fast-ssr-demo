@@ -1,3 +1,4 @@
+//TODO: This is not currently being used.
 // This is used to compile server-side code.
 import { defineConfig } from "vite";
 

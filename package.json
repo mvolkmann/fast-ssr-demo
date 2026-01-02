@@ -2,11 +2,12 @@
   "name": "fast-ssr-demo",
   "type": "module",
   "scripts": {
+    "build": "tsc",
     "dev": "node server.ts",
     "reinstall": "rm -rf node_modules package-lock.json && npm install"
   },
   "devDependencies": {
-    "vite": "^7.2.4"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.7",
