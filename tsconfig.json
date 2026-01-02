@@ -4,7 +4,9 @@
     "emitDecoratorMetadata": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "skipLibCheck": true,
     "target": "ESNext",
     "useDefineForClassFields": false
-  }
+  },
+  "exclude": ["server.ts"]
 }
