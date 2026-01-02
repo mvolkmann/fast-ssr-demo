@@ -17,7 +17,7 @@
       const button = document.querySelector("button");
       button.addEventListener("click", async () => {
         // Get HTML from the greet endpoint.
-        const res = await fetch("http://localhost:3000/greet?name=Mark");
+        const res = await fetch("http://localhost:5173/greet?name=Mark");
         const html = await res.text();
         // Insert the HTML after the Greet button.
         button.insertAdjacentHTML("afterend", html);

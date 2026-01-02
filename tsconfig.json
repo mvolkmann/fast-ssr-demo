@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": false,
-    "emitDecoratorMetadata": false,
     "lib": ["ES2022", "DOM"],
     "module": "ESNext",
     "moduleResolution": "bundler",

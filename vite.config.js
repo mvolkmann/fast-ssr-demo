@@ -11,4 +11,10 @@ export default defineConfig({
       external: ["node:events"],
     },
   },
+  esbuild: {
+    target: "es2022",
+    supported: {
+      decorators: true,
+    },
+  },
 });
