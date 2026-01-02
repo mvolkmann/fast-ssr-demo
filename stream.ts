@@ -7,14 +7,11 @@ import fastSSR from "@microsoft/fast-ssr";
 const { templateRenderer } = fastSSR();
 
 export function streamHTML(c: Context, html: string) {
-  // The type of result is IterableIterator<string>.
-  const iterator = templateRenderer.render(html);
-
   c.header("Content-Type", "text/html; charset=utf-8");
   c.header("Transfer-Encoding", "chunked");
   c.header("X-Content-Type-Options", "nosniff"); // security measure
+  const iterator = templateRenderer.render(html);
   const encoder = new TextEncoder();
-
   return stream(c, async (stream) => {
     for (const chunk of iterator) {
       await stream.write(encoder.encode(chunk));
