@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": false,
+    "lib": ["ES2017", "DOM"],
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "skipLibCheck": true,
-    "target": "ESNext",
+    "strict": true,
+    "target": "ES2017",
     "useDefineForClassFields": false
   },
-  "exclude": ["server.ts"]
+  "exclude": ["server.ts", "stream.ts"]
 }

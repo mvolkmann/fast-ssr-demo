@@ -2,6 +2,7 @@
   "name": "fast-ssr-demo",
   "type": "module",
   "scripts": {
+    "build": "tsc",
     "dev": "node server.ts",
     "reinstall": "rm -rf node_modules package-lock.json && npm install"
   },
@@ -10,5 +11,8 @@
     "@microsoft/fast-element": "^2.9.1",
     "@microsoft/fast-ssr": "^1.0.0-beta.36",
     "hono": "^4.11.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
