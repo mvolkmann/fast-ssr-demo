@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    "experimentalDecorators": false,
+    "emitDecoratorMetadata": false,
+    "lib": ["ES2022", "DOM"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "skipLibCheck": true,
-    "target": "ESNext",
-    "useDefineForClassFields": false
-  },
-  "exclude": ["server.ts"]
+    "strict": true,
+    "target": "ES2022",
+    "useDefineForClassFields": true
+  }
 }

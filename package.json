@@ -2,17 +2,19 @@
   "name": "fast-ssr-demo",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "dev": "node server.ts",
+    "build:client": "vite build --config vite.client-config.js",
+    "build:server": "vite build",
+    "clean": "rm -rf dist",
+    "dev": "vite",
     "reinstall": "rm -rf node_modules package-lock.json && npm install"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.7",
     "@microsoft/fast-element": "^2.9.1",
     "@microsoft/fast-ssr": "^1.0.0-beta.36",
     "hono": "^4.11.3"
+  },
+  "devDependencies": {
+    "vite": "^7.3.0"
   }
 }

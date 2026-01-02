@@ -1,7 +1,7 @@
 import { type Context, Hono } from "hono";
 import { serve } from "@hono/node-server";
 import { serveStatic } from "@hono/node-server/serve-static";
-import { streamHTML } from "./stream.ts";
+import { streamHTML } from "./stream";
 
 const html = String.raw;
 const app = new Hono();
